@@ -86,7 +86,7 @@
   transform: scale(1.5);
 }
 
-/* parte animation */
+/* parte animation icone */
 .ex-10-icon {
     animation: ruota 3s linear infinite;
 }
@@ -105,5 +105,113 @@
   70% {
       transform: rotate(250deg);
   }
+}
 
+/* parte animata bottoni */
+
+.ex-12-button:hover .ex-12-top-white
+ {
+    animation: spostatop 2s linear;
+}
+@keyframes spostatop {
+    0% {
+        left: 10%;
+    }
+    50% {
+        left: 60%;
+    }
+    100% {
+        left: 10%;
+    }
+}
+
+.ex-12-button:hover .ex-12-bottom-white
+{
+   animation: spostabottom 2s infinite;
+   /* cambio linear con infinite */
+}
+
+@keyframes spostabottom {
+    0% {
+        right: 10%;
+    }
+    50% {
+        right: 60%;
+    }
+    100% {
+        right: 10%;
+    }
+}
+
+
+
+
+
+
+
+.ex-13-button:hover .ex-13-top-white
+ {
+    animation: spostatop2 1s infinite;
+    /* debug */
+    background-color: green;
+}
+@keyframes spostatop2 {
+  0% {
+      left: 10%;
+      top: -10px;
+  }
+  30% {
+      left: calc(100% - 30px);
+      top: -10px;
+  }
+  45% {
+      left: calc(100% - 30px);
+      top: 100%;
+  }
+  75% {
+      left: 0;
+      top: 100%;
+  }
+  90% {
+      left: -15px;
+      top: -10px;
+  }
+  100% {
+      left: 10%;
+      top: -10px;
+  }
+}
+
+.ex-13-button:hover .ex-13-bottom-white
+{
+   animation: spostabottom2 1s infinite;
+   /* debug */
+   background-color: red;
+}
+
+@keyframes spostabottom2 {
+  0% {
+      right: 10%;
+      bottom: -10px;
+  }
+  30% {
+      right: calc(100% - 30px);
+      bottom: -10px;
+  }
+  45% {
+      right: calc(100% - 30px);
+      bottom: 100%;
+  }
+  75% {
+      right: 0;
+      bottom: 100%;
+  }
+  90% {
+      right: -15px;
+      bottom: -10px;
+  }
+  100% {
+      right: 10%;
+      bottom: -10px;
+  }
 }

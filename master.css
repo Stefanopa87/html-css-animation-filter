@@ -1,3 +1,6 @@
+
+/* IDEA: I MIEI EFFETTI */
+
 .ex-1-square{
   transition: 4s;
 }
@@ -44,4 +47,42 @@
 .ex-5-square:active{
   width: 30px;
   height: 30px;
+}
+
+.ex-6-img:hover{
+  filter: grayscale(1);
+}
+
+.ex-7-img{
+  transition: 3s;
+}
+
+.ex-7-img:hover{
+  filter: grayscale(1);
+
+  /* trovato sul web:  */
+  -ms-transform: rotate(45deg); /* IE 9 */
+  -ms-transform-origin: 20% 40%; /* IE 9 */
+  transform: rotate(45deg);
+}
+
+.ex-8-img{
+  transition: 2s;
+}
+
+.ex-8-img:hover{
+
+  filter: drop-shadow(8px 8px 10px #000) sepia(1);
+  border-radius: 15%;
+}
+
+.ex-9-img{
+  transition: 2s;
+}
+
+.ex-9-img:hover{
+
+  filter: drop-shadow(8px 8px 10px #000) sepia(1);
+  border-radius: 15%;
+  transform: scale(1.5);
 }

@@ -81,8 +81,29 @@
 }
 
 .ex-9-img:hover{
-
-  filter: drop-shadow(8px 8px 10px #000) sepia(1);
+  filter: drop-shadow(8px 8px 10px #000) contrast(0.5);
   border-radius: 15%;
   transform: scale(1.5);
+}
+
+/* parte animation */
+.ex-10-icon {
+    animation: ruota 3s linear infinite;
+}
+
+@keyframes ruota {
+    0% {
+        transform: rotate(360deg);
+    }
+}
+
+.ex-11-icon:hover{
+  animation: ruota2 3s linear;
+}
+
+@keyframes ruota2 {
+  70% {
+      transform: rotate(250deg);
+  }
+
 }
